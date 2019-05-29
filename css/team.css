@@ -1,0 +1,111 @@
+@media(max-width: 699px){
+    .text-image-block{
+        font-size: 15px;
+        width: 100%;
+        margin: 0;
+    }
+    .text-image-block span{
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 700px){
+    .text-image-block{
+        font-size: 25px;
+        width: 60%;
+    }
+
+    .text-image-block span{
+        font-size: 35px;
+    }
+
+    .right{
+        margin-left: auto;
+    }
+}
+
+.text-image-block{
+    margin-top: 4%;
+    background: var(--text-block-color);
+    padding: 2%;
+    border-radius: 20px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--tab-color-1);
+    box-shadow: 0px 0px 7px 4px var(--tab-color-1);
+    animation: text-block-shadow 3s alternate-reverse infinite;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.text-image-block:last-child{
+    margin-bottom: 4%;
+}
+
+/**************************************************/
+/*** COLLAPSIBLE INTO THE TEAMMATES DESCRIPTION ***/
+/**************************************************/
+/*************************************************************************************************/
+.image-team{
+    width: 100%;
+    border: 5px solid black;
+    border-radius: 0px;
+    transition: border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+    box-shadow: 0 0 0px 0px var(--tab-color-1);
+}
+.image-team:hover{
+    border-radius: 30px 30px 0px 0px ;
+    border: 5px solid var(--golden-light);
+    box-shadow: 0 0 0px 5px var(--tab-color-1);
+}
+
+@media(max-width: 699px){
+    .image-description-team{
+        font-size: 30px;
+    }
+}
+@media(min-width: 700px){
+    .image-description-team{
+        font-size: 40px;
+    }
+}
+
+.image-description-team{
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, var(--tab-color-1), var(--tab-color-2), var(--tab-color-1) );
+    font-family: 'Golden Font', Arial, sans-serif;
+    text-shadow: 1px 0px 2px var(--golden-light), 0px 1px 2px var(--golden-light), -1px 0px 2px var(--golden-light), 0px -1px 2px var(--golden-light);
+    color: var(--tab-color-1);
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/**************************************************/
+/*** COLLAPSIBLE INTO THE TEAMMATES DESCRIPTION ***/
+/**************************************************/
+/*************************************************************************************************/
+@media(max-width: 699px){
+    .text-image-collapsible, .collapsible-body-team, .collapsible-header-team{
+        font-size: 15px;
+    }
+}
+@media(min-width: 700px){
+    .text-image-collapsible, .collapsible-body-team, .collapsible-header-team{
+        font-size: 20px;
+    }
+}
+.text-image-collapsible, .collapsible-body-team, .collapsible-header-team{
+    border: none;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--golden-light);
+}
+
+.collapsible-header-team{
+    background: linear-gradient(to top, var(--navbar-color), var(--navbar-color-1) );
+}
+
+.collapsible-body-team{
+    background: linear-gradient(to bottom, rgb(194, 194, 194), white );
+    color: black;
+}

@@ -1,0 +1,65 @@
+@media(max-width: 699px){
+    .input-field-input, .input-field-placeholder{
+        font-size: 25px !important;
+    }
+    .appointment-heading{
+        font-size: 35px !important;
+    }
+}
+@media(min-width: 700px){
+    .input-field-input, .input-field-placeholder{
+        font-size: 30px !important;
+    }
+    .appointment-heading{
+        font-size: 50px !important;
+    }
+}
+
+.input-field-input{
+    font-family: 'Golden Font', Arial, Helvetica, sans-serif;
+    color: var(--tab-color-1);
+    box-shadow: 0 0 0 0 black;
+    font-weight: bolder;
+}
+
+.input-field-input:focus{
+    box-shadow: 0 2px 0 0 goldenrod !important;
+    border-bottom: 2px goldenrod !important;
+}
+
+.input-field-placeholder{
+    font-family: 'Golden Font', Arial, Helvetica, sans-serif;
+    color: var(--tab-color-1) !important;
+    font-weight: bolder;
+}
+
+.text-block-appointment{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.appointment-heading{
+    display: block;
+    text-align: center;
+    font-family: 'Golden Font', Arial, Helvetica, sans-serif;
+    color: var(--tab-color-1) !important;
+    font-weight: bolder;
+}
+
+.appointment-submit{
+    width: 45%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 15px;
+    background: var(--tab-color-1);
+    transition: background-color 0.5;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Golden Font', Arial, sans-serif;
+    color: var(--golden-light);
+    text-align: center;
+}
+
+.appointment-submit:hover{
+    background: var(--tab-color-2);
+}

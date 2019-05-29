@@ -1,0 +1,85 @@
+/*****************************************/
+/*** GALLERY BLACK AND WHITE CONTAINER ***/
+/*****************************************/
+/*************************************************************************************************/
+@media(max-width: 699px){
+    .gallery-container{
+        font-size: 15px;
+    }
+    .gallery-container span{
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 700px){
+    .gallery-container{
+        font-size: 25px;
+    }
+    .gallery-container span{
+        font-size: 35px;
+    }
+}
+.gallery-container{
+    width: 100%;
+    margin-top: 5%;
+    background: linear-gradient(to right, black 0%, black 40%, white 60%, white 100%);
+    padding: 2%;
+    border-radius: 20px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--tab-color-1);
+    box-shadow: 0px 0px 7px 4px var(--tab-color-1);
+    animation: text-block-shadow 3s alternate-reverse infinite;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.gallery-container:last-child{
+    margin-bottom: 5%;
+}
+
+.before-and-after-container{
+    display: flex;
+    width: 100%;
+}
+
+.gallery-heading{
+    display: block;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: var(--golden-light);
+}
+
+/***********************************/
+/*** BEFORE AND AFTER CONTAINERS ***/
+/***********************************/
+/*************************************************************************************************/
+.before-container, .after-container{
+    width: 40%;
+    height: 40vw;
+    background: white;
+    border-radius: 25px;
+    padding: 1%;
+    box-shadow: inset 0 0 10px black;
+}
+
+.after-container{
+    background: black;
+    margin-left: auto;
+    box-shadow: inset 0 0 10px white;
+}
+
+.before-and-after-images{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.before-and-after-description{
+    width: 100%;
+    border-radius: 20px;
+    background: var(--tab-color-1);
+}

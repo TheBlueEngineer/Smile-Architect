@@ -1,0 +1,75 @@
+/*****************/
+/*** MAP IMAGE ***/
+/*****************/
+/*************************************************************************************************/
+.map{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 0px;
+    transition: border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+    box-shadow: 0 0 0px 0px var(--tab-color-1);
+}
+.map:hover{
+    border: 5px solid var(--golden-light);
+    box-shadow: 0 0 0px 5px var(--tab-color-1);
+}
+
+/************************/
+/*** QUESTION CONTACT ***/
+/************************/
+/*************************************************************************************************/
+.text-block:hover{
+    background: white;
+}
+/***********************/
+/*** MAP DESCRIPTION ***/
+/***********************/
+/*************************************************************************************************/
+@media(max-width: 699px){
+    .map-description, .question-contact, .contact-description{
+        font-size: 25px;
+    }
+    .contact-description{
+        font-size: 20px;
+    }
+}
+@media(min-width: 700px){
+    .map-description, .question-contact{
+        font-size: 35px;
+    }
+    .contact-description{
+        font-size: 25px;
+    }
+}
+.map-description, .question-contact, .contact-description{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, var(--tab-color-1), var(--tab-color-2), var(--tab-color-1) );
+    font-family: 'Golden Font', Arial, sans-serif;
+    font-weight: bolder;
+    color: var(--golden-light);
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.map-description{
+    transition: color 0.5s;
+}
+
+.map-description:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.question-contact{
+    border-radius: 20px 20px 0px 0px ;
+}
+
+.contact-description{
+    border-radius: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background: var(--tab-color-1);
+}
